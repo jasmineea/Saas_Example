@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   root to: 'activity#mine'
   get 'activity/mine'
   get 'activity/feed'
